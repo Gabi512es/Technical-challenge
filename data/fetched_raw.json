@@ -7,6 +7,7 @@
     "tmdb_id": 278,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
     "genres": [
       "Drama",
@@ -52,6 +53,7 @@
     "tmdb_id": 27205,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
     "genres": [
       "Action",
@@ -94,6 +96,7 @@
     "tmdb_id": 496243,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": true,
     "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
     "genres": [
       "Comedy",
@@ -138,6 +141,7 @@
     "tmdb_id": 120467,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé. The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.",
     "genres": [
       "Comedy",
@@ -181,6 +185,7 @@
     "tmdb_id": 68595,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": true,
     "overview": "David Attenborough presents a documentary series exploring how animals meet the challenges of surviving in the most iconic habitats on earth.",
     "genres": [
       "Documentary",
@@ -224,6 +229,7 @@
     "tmdb_id": 1396,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
     "genres": [
       "Drama",
@@ -279,6 +285,7 @@
     "tmdb_id": 194,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "At a tiny Parisian café, the adorable yet painfully shy Amélie accidentally discovers a gift for helping others. Soon Amelie is spending her days as a matchmaker, guardian angel, and all-around do-gooder. But when she bumps into a handsome stranger, will she find the courage to become the star of her very own love story?",
     "genres": [
       "Comedy",
@@ -330,6 +337,7 @@
     "tmdb_id": 155,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
     "genres": [
       "Action",
@@ -376,6 +384,7 @@
     "tmdb_id": 376867,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": true,
     "overview": "The tender, heartbreaking story of a young man’s struggle to find himself, told across three defining chapters in his life as he experiences the ecstasy, pain, and beauty of falling in love, while grappling with his own sexuality.",
     "genres": [
       "Drama"
@@ -424,6 +433,7 @@
     "tmdb_id": 129,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
     "genres": [
       "Animation",
@@ -463,6 +473,7 @@
     "tmdb_id": 289,
     "match_confidence": "matched",
     "year_diff": 1,
+    "tie_break_used": false,
     "overview": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
     "genres": [
       "Drama",
@@ -510,6 +521,7 @@
     "tmdb_id": 419430,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": true,
     "overview": "Chris and his girlfriend Rose go upstate to visit her parents for the weekend. At first, Chris reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined.",
     "genres": [
       "Mystery",
@@ -561,6 +573,7 @@
     "tmdb_id": 2316,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
     "genres": [
       "Comedy"
@@ -595,6 +608,7 @@
     "tmdb_id": 76341,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and most everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order.",
     "genres": [
       "Action",
@@ -642,6 +656,7 @@
     "tmdb_id": 80767,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "Revered sushi chef Jiro Ono strives for perfection in his work, while his eldest son, Yoshikazu, has trouble living up to his father's legacy.",
     "genres": [
       "Documentary"
@@ -675,33 +690,32 @@
     "content_id": "1016",
     "title": "Chernobyl",
     "year": 2019,
-    "media_type": "movie",
-    "tmdb_id": 608558,
+    "media_type": "tv",
+    "tmdb_id": 87108,
     "match_confidence": "matched",
     "year_diff": 0,
-    "overview": "Eight months after the Chernobyl disaster, a Chernobylite woman that stayed behind to care for her sick mother gives birth to a mutated daughter. She wakes up after giving birth to find her mother gone. Masha, isolated and suffering from cataracts from the radiation exposure, becomes fearful that soldiers will take her contaminated baby. While attempting to reunite with her family in Kiev, the blinding mother and infant become lost in a forest. Masha sees a figure chasing her and believes it's a soldier that wants her child.",
+    "tie_break_used": true,
+    "overview": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
     "genres": [
       "Drama"
     ],
-    "runtime": 29,
-    "original_language": "ru",
+    "runtime": null,
+    "original_language": "en",
     "cast": [
-      "Alyona Khmara",
-      "Pasha Sol",
-      "Natasha Goubskaya",
-      "Polina Sokolskiy"
+      "Jared Harris",
+      "Stellan Skarsgård",
+      "Emily Watson",
+      "Paul Ritter",
+      "Jessie Buckley"
     ],
-    "director": "Alexander Shuryepov",
+    "director": "Craig Mazin",
     "keywords": [
-      "forest",
-      "foreign language",
-      "tragedy",
+      "based on true story",
       "disaster",
-      "black and white",
-      "soldier",
-      "pripyat",
-      "chernobyl, ukraine",
-      "ukraine"
+      "miniseries",
+      "nuclear catastrophe",
+      "1980s",
+      "chernobyl, ukraine"
     ],
     "fetch_status": "ok"
   },
@@ -713,6 +727,7 @@
     "tmdb_id": 422,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "Guido Anselmi, a film director, finds himself creatively barren at the peak of his career. Urged by his doctors to rest, Anselmi heads for a luxurious resort, but a sorry group gathers—his producer, staff, actors, wife, mistress, and relatives—each one begging him to get on with the show. In retreat from their dependency, he fantasizes about past women and dreams of his childhood.",
     "genres": [
       "Drama"
@@ -763,6 +778,7 @@
     "tmdb_id": 8461,
     "match_confidence": "matched",
     "year_diff": 1,
+    "tie_break_used": false,
     "overview": "When Ann, husband George, and son Georgie arrive at their holiday home they are visited by a pair of polite and seemingly pleasant young men. Armed with deceptively sweet smiles and some golf clubs, they proceed to terrorize and torture the tight-knit clan, giving them until the next day to survive.",
     "genres": [
       "Thriller",
@@ -811,6 +827,7 @@
     "tmdb_id": 67070,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "A portrait into the mind of a dry-witted, sexual, angry, porn-watching, grief-riddled woman, trying to make sense of the world. As she hurls herself headlong at modern living, Fleabag is thrown roughly up against the walls of contemporary London, with all its frenetic energy, late nights, and bright lights.",
     "genres": [
       "Comedy",
@@ -865,6 +882,7 @@
     "tmdb_id": 361292,
     "match_confidence": "matched",
     "year_diff": 0,
+    "tie_break_used": false,
     "overview": "A darkness swirls at the center of a world-renowned dance company, one that will engulf the artistic director, an ambitious young dancer, and a grieving psychotherapist. Some will succumb to the nightmare. Others will finally wake up.",
     "genres": [
       "Horror",
@@ -921,6 +939,7 @@
     "tmdb_id": 220289,
     "match_confidence": "matched",
     "year_diff": 1,
+    "tie_break_used": false,
     "overview": "Four couples gather for dinner the night a mysterious and powerful comet passes overhead.",
     "genres": [
       "Thriller",
