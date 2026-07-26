@@ -119,3 +119,71 @@ We'll evaluate based on:
 If you have any questions about the test, please reach out to us.
 
 Good luck! We're excited to see your approach.
+
+---
+
+## Stage 3 — Running the Search API
+
+Stage 3 is a standalone FastAPI application (not a notebook) exposing a single `POST /search`
+endpoint. It implements a hybrid retrieve-then-rerank pipeline over the 21-item catalog produced
+by stages 1 and 2 (`data/enriched_final.json`):
+
+1. **Embedding retrieval** (local `sentence-transformers` model, `all-MiniLM-L6-v2`) narrows the
+   catalog down to the top `TOP_K_RETRIEVAL` (8) candidates by cosine similarity. Embeddings are
+   computed once at server startup, not per request — this is the piece designed to scale to a
+   real catalog of thousands of titles.
+2. **LLM reranking** (Claude, via a forced `submit_ranked_results` tool call) refines those 8
+   candidates down to the 3-5 most relevant for the specific query, with a short justification
+   per result — this is the piece that captures nuanced query intent that pure vector similarity
+   can miss.
+
+### Install dependencies
+
+```bash
+python3 -m pip install -r api/requirements.txt
+```
+
+### Start the server
+
+Make sure `.env` has `ANTHROPIC_API_KEY` set (same `.env` used by stages 1-2), then run from the
+project root:
+
+```bash
+uvicorn api.main:app --reload
+```
+
+The first startup downloads the `all-MiniLM-L6-v2` model (a few dozen MB, cached afterwards) and
+precomputes embeddings for all 21 items before the server starts accepting requests.
+
+### Call the search endpoint
+
+With curl:
+
+```bash
+curl -X POST http://127.0.0.1:8000/search \
+  -H "Content-Type: application/json" \
+  -d '{"query": "movies about dreams or alternate realities"}'
+```
+
+With [HTTPie](https://httpie.io/):
+
+```bash
+http POST http://127.0.0.1:8000/search query="movies about dreams or alternate realities"
+```
+
+### Example queries and expected results
+
+- **`"movies about dreams or alternate realities"`** → *Coherence*, *8½*, *Spirited Away*,
+  *Suspiria* — all involve blurred or alternate realities, dreams, or parallel-world narratives.
+- **`"something funny and real"`** → *Fleabag*, *The Office*, *Parasite*, *Moonlight*, *Amélie* —
+  content blending humor with grounded, emotionally honest storytelling.
+- **`"true crime documentary about a disaster"`** → *Chernobyl* — the only title matching both
+  the true-story and disaster angle of the query.
+
+Each result includes a `relevance_reason` explaining, in plain language, why the LLM reranker
+selected that title for the query — useful for a Content team member auditing why a given result
+surfaced.
+
+An empty or whitespace-only `query` returns `400 Bad Request` with a clear error message. If the
+LLM reranking call fails for any reason, the endpoint falls back to the top embedding-retrieved
+candidates rather than crashing.

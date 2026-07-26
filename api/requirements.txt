@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+sentence-transformers
+anthropic
+python-dotenv
+numpy
