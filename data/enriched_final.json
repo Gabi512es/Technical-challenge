@@ -1,0 +1,1199 @@
+[
+  {
+    "content_id": "1001",
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "description": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Prison Drama",
+        "Redemption Drama",
+        "Crime Drama"
+      ],
+      "mood": [
+        "Inspiring",
+        "Melancholic",
+        "Hopeful",
+        "Emotional"
+      ],
+      "themes": [
+        "hope",
+        "friendship",
+        "redemption",
+        "injustice",
+        "corruption",
+        "institutionalization",
+        "perseverance",
+        "freedom"
+      ],
+      "target_audience": [
+        "Adults 25-54",
+        "Prestige drama viewers",
+        "Prime time"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "The Green Mile",
+        "Escape from Alcatraz",
+        "American History X",
+        "The Count of Monte Cristo",
+        "Cool Hand Luke"
+      ],
+      "content_warnings": [
+        "Violence",
+        "Prison abuse",
+        "Sexual assault references",
+        "Strong language",
+        "Murder"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Weekend deep-dive",
+        "Award-season programming block"
+      ]
+    }
+  },
+  {
+    "content_id": "1002",
+    "title": "Inception",
+    "year": 2010,
+    "description": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Heist Thriller",
+        "Psychological Sci-Fi",
+        "Mind-bending Thriller"
+      ],
+      "mood": [
+        "Tense",
+        "Intellectual",
+        "Dreamlike",
+        "Suspenseful"
+      ],
+      "themes": [
+        "reality vs illusion",
+        "guilt and redemption",
+        "memory",
+        "subconscious manipulation",
+        "identity",
+        "loss"
+      ],
+      "target_audience": [
+        "Adults 18-49",
+        "Prime time",
+        "Fans of high-concept sci-fi"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "The Matrix",
+        "Shutter Island",
+        "Interstellar",
+        "Memento",
+        "The Prestige"
+      ],
+      "content_warnings": [
+        "Violence",
+        "Intense action sequences",
+        "Thematic complexity"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Focused viewing (requires attention)",
+        "Discussion-worthy group watch"
+      ]
+    }
+  },
+  {
+    "content_id": "1003",
+    "title": "Parasite",
+    "year": 2019,
+    "description": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Dark Comedy",
+        "Social Satire",
+        "Psychological Thriller",
+        "Class-Conflict Drama"
+      ],
+      "mood": [
+        "Tense",
+        "Darkly humorous",
+        "Unsettling",
+        "Suspenseful",
+        "Melancholic"
+      ],
+      "themes": [
+        "class inequality",
+        "family loyalty",
+        "deception and infiltration",
+        "social mobility",
+        "capitalism and greed",
+        "hidden resentment"
+      ],
+      "target_audience": [
+        "Adults 25-54",
+        "Prestige/awards film viewers",
+        "Late-night adult",
+        "Foreign/arthouse film enthusiasts"
+      ],
+      "programming_slot_fit": [
+        "Late night",
+        "Prime time"
+      ],
+      "similar_content_suggestions": [
+        "Shoplifters",
+        "Snowpiercer",
+        "The Handmaiden",
+        "Burning",
+        "Knives Out",
+        "Us"
+      ],
+      "content_warnings": [
+        "Violence",
+        "Strong language",
+        "Disturbing/graphic content",
+        "Mature themes"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Discussion-driven group viewing",
+        "Award-season programming block"
+      ]
+    }
+  },
+  {
+    "content_id": "1004",
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "description": "The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé. The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Whimsical Caper",
+        "Period Comedy-Drama",
+        "Dark Comedy",
+        "Art Heist"
+      ],
+      "mood": [
+        "Whimsical",
+        "Bittersweet",
+        "Quirky",
+        "Fast-paced",
+        "Nostalgic"
+      ],
+      "themes": [
+        "mentorship",
+        "friendship",
+        "loyalty",
+        "upheaval of war",
+        "nostalgia for a bygone era",
+        "class and privilege",
+        "theft and inheritance"
+      ],
+      "target_audience": [
+        "Adults 25-54",
+        "Film enthusiasts",
+        "Prime time"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Weekend afternoon"
+      ],
+      "similar_content_suggestions": [
+        "Moonrise Kingdom",
+        "The Royal Tenenbaums",
+        "Fantastic Mr. Fox",
+        "The French Dispatch",
+        "Amélie"
+      ],
+      "content_warnings": [
+        "Violence",
+        "Brief strong language",
+        "Gunfight scenes"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Date night",
+        "Film club / discussion viewing"
+      ]
+    }
+  },
+  {
+    "content_id": "1005",
+    "title": "Planet Earth II",
+    "year": 2016,
+    "description": "David Attenborough presents a documentary series exploring how animals meet the challenges of surviving in the most iconic habitats on earth.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Nature Documentary",
+        "Wildlife Documentary",
+        "Miniseries"
+      ],
+      "mood": [
+        "Inspiring",
+        "Relaxing",
+        "Awe-inspiring",
+        "Captivating"
+      ],
+      "themes": [
+        "survival",
+        "adaptation to environment",
+        "climate change",
+        "nature's diversity",
+        "habitat exploration"
+      ],
+      "target_audience": [
+        "Family / Daytime",
+        "Nature enthusiasts",
+        "Educational viewing",
+        "All ages"
+      ],
+      "programming_slot_fit": [
+        "Family slot",
+        "Weekend afternoon",
+        "Daytime"
+      ],
+      "similar_content_suggestions": [
+        "Planet Earth",
+        "Blue Planet II",
+        "Our Planet",
+        "Life",
+        "Frozen Planet"
+      ],
+      "content_warnings": [
+        "Depictions of predation/animal death in nature"
+      ],
+      "viewing_context": [
+        "Family movie night",
+        "Background viewing",
+        "Relaxing evening watch",
+        "Educational viewing"
+      ]
+    }
+  },
+  {
+    "content_id": "1006",
+    "title": "Breaking Bad",
+    "year": 2008,
+    "description": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer and given a prognosis of only two years left to live. He becomes filled with a sense of fearlessness and an unrelenting desire to secure his family's financial future at any cost as he enters the dangerous world of drugs and crime.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Crime Drama",
+        "Neo-Western",
+        "Psychological Thriller",
+        "Dark Comedy"
+      ],
+      "mood": [
+        "Tense",
+        "Dark",
+        "Morally complex",
+        "Suspenseful",
+        "Bleak"
+      ],
+      "themes": [
+        "fall from grace",
+        "morality and corruption",
+        "family and legacy",
+        "pride and ego",
+        "mortality",
+        "transformation of identity",
+        "consequences of crime"
+      ],
+      "target_audience": [
+        "Late-night adult",
+        "Adults 18-49"
+      ],
+      "programming_slot_fit": [
+        "Late night",
+        "Prime time"
+      ],
+      "similar_content_suggestions": [
+        "Better Call Saul",
+        "The Sopranos",
+        "Ozark",
+        "Narcos",
+        "Weeds",
+        "The Wire"
+      ],
+      "content_warnings": [
+        "Violence",
+        "Strong language",
+        "Drug use/production",
+        "Disturbing content",
+        "Mature themes"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Binge viewing",
+        "Adult solo or partner viewing"
+      ]
+    }
+  },
+  {
+    "content_id": "1007",
+    "title": "Amélie",
+    "year": 2001,
+    "description": "At a tiny Parisian café, the adorable yet painfully shy Amélie accidentally discovers a gift for helping others. Soon Amelie is spending her days as a matchmaker, guardian angel, and all-around do-gooder. But when she bumps into a handsome stranger, will she find the courage to become the star of her very own love story?",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Whimsical Romantic Comedy",
+        "Magic Realism",
+        "Feel-good Character Study"
+      ],
+      "mood": [
+        "Whimsical",
+        "Charming",
+        "Heartwarming",
+        "Nostalgic",
+        "Lighthearted"
+      ],
+      "themes": [
+        "kindness",
+        "self-discovery",
+        "love and courage",
+        "loneliness and connection",
+        "childhood memory",
+        "finding one's place in the world"
+      ],
+      "target_audience": [
+        "Adults 18-49",
+        "Date-night viewers",
+        "Fans of foreign/arthouse film",
+        "Romance enthusiasts"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Weekend afternoon"
+      ],
+      "similar_content_suggestions": [
+        "The Fabulous Destiny of Amélie Poulain (alt title)",
+        "Chocolat",
+        "Midnight in Paris",
+        "Delicatessen",
+        "The City of Lost Children",
+        "Paris, je t'aime"
+      ],
+      "content_warnings": [
+        "Mild sexual content/references",
+        "Brief adult themes (sex shop setting)"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Date night",
+        "Cozy solo viewing",
+        "Weekend relaxation"
+      ]
+    }
+  },
+  {
+    "content_id": "1008",
+    "title": "The Dark Knight",
+    "year": 2008,
+    "description": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Superhero",
+        "Crime Drama",
+        "Psychological Thriller",
+        "Neo-noir"
+      ],
+      "mood": [
+        "Dark",
+        "Tense",
+        "Intense",
+        "Brooding",
+        "Chaotic"
+      ],
+      "themes": [
+        "chaos vs order",
+        "moral corruption",
+        "vigilantism",
+        "sacrifice",
+        "duality of heroism and villainy",
+        "the cost of justice"
+      ],
+      "target_audience": [
+        "Adults",
+        "Teens",
+        "Superhero/Comic fans",
+        "Prime time general audience"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "Batman Begins",
+        "The Dark Knight Rises",
+        "Joker",
+        "Se7en",
+        "Heat",
+        "Watchmen"
+      ],
+      "content_warnings": [
+        "Violence",
+        "Disturbing images",
+        "Strong language",
+        "Intense psychological themes"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Weekend blockbuster night",
+        "Attention-required viewing"
+      ]
+    }
+  },
+  {
+    "content_id": "1009",
+    "title": "Moonlight",
+    "year": 2016,
+    "description": "The tender, heartbreaking story of a young man’s struggle to find himself, told across three defining chapters in his life as he experiences the ecstasy, pain, and beauty of falling in love, while grappling with his own sexuality.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Coming-of-age Drama",
+        "LGBTQ Drama",
+        "Character Study",
+        "Urban Drama"
+      ],
+      "mood": [
+        "Tender",
+        "Melancholic",
+        "Intimate",
+        "Poignant",
+        "Contemplative"
+      ],
+      "themes": [
+        "self-discovery",
+        "sexuality and identity",
+        "masculinity",
+        "addiction",
+        "poverty",
+        "parent-child relationships",
+        "love",
+        "isolation",
+        "coming of age",
+        "homophobia"
+      ],
+      "target_audience": [
+        "Adults",
+        "LGBTQ audiences",
+        "Awards/prestige drama viewers",
+        "Mature young adults"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "Call Me By Your Name",
+        "If Beale Street Could Talk",
+        "Boyhood",
+        "Precious",
+        "The Fits",
+        "Pariah"
+      ],
+      "content_warnings": [
+        "Drug use",
+        "Drug addiction",
+        "Violence",
+        "Bullying",
+        "Homophobia",
+        "Strong language",
+        "Mature themes"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Solo reflective viewing",
+        "Discussion/film club screening"
+      ]
+    }
+  },
+  {
+    "content_id": "1010",
+    "title": "Spirited Away",
+    "year": 2001,
+    "description": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Coming-of-age Fantasy",
+        "Japanese Animation",
+        "Mythological Adventure",
+        "Magical Realism"
+      ],
+      "mood": [
+        "Whimsical",
+        "Dreamlike",
+        "Suspenseful",
+        "Wondrous",
+        "Melancholic"
+      ],
+      "themes": [
+        "coming of age",
+        "courage",
+        "identity",
+        "family bonds",
+        "greed and consumerism",
+        "perseverance",
+        "transformation"
+      ],
+      "target_audience": [
+        "Family / Daytime",
+        "Kids and Tweens",
+        "Animation Enthusiasts",
+        "Weekend Family Viewing"
+      ],
+      "programming_slot_fit": [
+        "Family slot",
+        "Weekend afternoon",
+        "Daytime"
+      ],
+      "similar_content_suggestions": [
+        "My Neighbor Totoro",
+        "Howl's Moving Castle",
+        "Princess Mononoke",
+        "Ponyo",
+        "Kiki's Delivery Service",
+        "The Secret World of Arrietty"
+      ],
+      "content_warnings": [
+        "Mild peril/scary imagery",
+        "Fantasy transformation body horror (mild)"
+      ],
+      "viewing_context": [
+        "Family movie night",
+        "Weekend afternoon viewing",
+        "Rainy day watch"
+      ]
+    }
+  },
+  {
+    "content_id": "1011",
+    "title": "Casablanca",
+    "year": 1942,
+    "description": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Classic Romantic Drama",
+        "Wartime Drama",
+        "Film Noir",
+        "Political Thriller"
+      ],
+      "mood": [
+        "Romantic",
+        "Melancholic",
+        "Tense",
+        "Bittersweet",
+        "Nostalgic"
+      ],
+      "themes": [
+        "sacrifice",
+        "love and duty",
+        "political resistance",
+        "moral ambiguity",
+        "exile",
+        "patriotism",
+        "lost love"
+      ],
+      "target_audience": [
+        "Classic film enthusiasts",
+        "Adult drama viewers",
+        "Prime time general audience"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "The Third Man",
+        "Notorious",
+        "To Have and Have Not",
+        "Gone with the Wind",
+        "The Maltese Falcon"
+      ],
+      "content_warnings": [
+        "War violence",
+        "Wartime political themes",
+        "Smoking depiction"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Classic movie night",
+        "Date night"
+      ]
+    }
+  },
+  {
+    "content_id": "1012",
+    "title": "Get Out",
+    "year": 2017,
+    "description": "Chris and his girlfriend Rose go upstate to visit her parents for the weekend. At first, Chris reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Psychological Horror",
+        "Social Thriller",
+        "Satirical Horror",
+        "Mystery"
+      ],
+      "mood": [
+        "Tense",
+        "Unsettling",
+        "Suspenseful",
+        "Darkly Satirical"
+      ],
+      "themes": [
+        "racism",
+        "interracial relationships",
+        "identity and autonomy",
+        "manipulation and control",
+        "family secrets",
+        "social commentary"
+      ],
+      "target_audience": [
+        "Adults 18-49",
+        "Late-night adult",
+        "Horror/Thriller enthusiasts"
+      ],
+      "programming_slot_fit": [
+        "Late night",
+        "Prime time"
+      ],
+      "similar_content_suggestions": [
+        "Us",
+        "The Stepford Wives",
+        "Don't Breathe",
+        "Rosemary's Baby",
+        "The Invitation"
+      ],
+      "content_warnings": [
+        "Violence",
+        "Racial themes/racism",
+        "Disturbing content",
+        "Strong language",
+        "Body horror elements"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Thought-provoking discussion viewing",
+        "Halloween/horror programming block"
+      ]
+    }
+  },
+  {
+    "content_id": "1013",
+    "title": "The Office",
+    "year": 2005,
+    "description": "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Mockumentary",
+        "Workplace Comedy",
+        "Sitcom",
+        "Cringe Comedy"
+      ],
+      "mood": [
+        "Humorous",
+        "Awkward",
+        "Lighthearted",
+        "Heartwarming"
+      ],
+      "themes": [
+        "workplace relationships",
+        "friendship",
+        "office culture",
+        "mundanity of everyday work",
+        "romance",
+        "personal growth"
+      ],
+      "target_audience": [
+        "Adults 18-49",
+        "Young Adults",
+        "Prime time general audience"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "Parks and Recreation",
+        "Brooklyn Nine-Nine",
+        "The Office (UK)",
+        "Superstore",
+        "Modern Family"
+      ],
+      "content_warnings": [
+        "Mild language",
+        "Sexual references",
+        "Adult humor"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Background viewing",
+        "Binge watching",
+        "Casual comedy viewing"
+      ]
+    }
+  },
+  {
+    "content_id": "1014",
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "description": "An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and most everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Post-Apocalyptic Action",
+        "Vehicular Combat",
+        "Dystopian Sci-Fi",
+        "Chase Thriller"
+      ],
+      "mood": [
+        "Intense",
+        "Frenetic",
+        "Adrenaline-fueled",
+        "Bleak",
+        "Empowering"
+      ],
+      "themes": [
+        "survival",
+        "freedom",
+        "rebellion against tyranny",
+        "redemption",
+        "scarcity of resources",
+        "found family"
+      ],
+      "target_audience": [
+        "Action fans",
+        "Late-night adult",
+        "Teens 16+",
+        "Sci-fi enthusiasts"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night",
+        "Weekend afternoon"
+      ],
+      "similar_content_suggestions": [
+        "Mad Max 2: The Road Warrior",
+        "Mad Max Beyond Thunderdome",
+        "The Road Warrior",
+        "Death Race",
+        "Dredd",
+        "Snowpiercer"
+      ],
+      "content_warnings": [
+        "Intense violence",
+        "Disturbing images",
+        "Strong action sequences",
+        "Thematic content involving oppression/slavery"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "High-energy group viewing",
+        "Action movie night"
+      ]
+    }
+  },
+  {
+    "content_id": "1015",
+    "title": "Jiro Dreams of Sushi",
+    "year": 2011,
+    "description": "Revered sushi chef Jiro Ono strives for perfection in his work, while his eldest son, Yoshikazu, has trouble living up to his father's legacy.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Food Documentary",
+        "Character Study",
+        "Biographical Documentary"
+      ],
+      "mood": [
+        "Meditative",
+        "Inspiring",
+        "Contemplative",
+        "Reverent"
+      ],
+      "themes": [
+        "pursuit of perfection",
+        "father-son relationships",
+        "legacy",
+        "craftsmanship",
+        "dedication",
+        "tradition vs succession"
+      ],
+      "target_audience": [
+        "Adults 25-54",
+        "Foodies / Culinary enthusiasts",
+        "Documentary enthusiasts"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night",
+        "Weekend afternoon"
+      ],
+      "similar_content_suggestions": [
+        "Chef's Table",
+        "The Mind of a Chef",
+        "El Bulli: Cooking in Progress",
+        "Tampopo",
+        "Somm"
+      ],
+      "content_warnings": [],
+      "viewing_context": [
+        "Evening watch",
+        "Background viewing",
+        "Solo viewing",
+        "Dinner-time viewing"
+      ]
+    }
+  },
+  {
+    "content_id": "1016",
+    "title": "Chernobyl",
+    "year": 2019,
+    "description": "The true story of one of the worst man-made catastrophes in history: the catastrophic nuclear accident at Chernobyl. A tale of the brave men and women who sacrificed to save Europe from unimaginable disaster.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Historical Drama",
+        "Disaster Drama",
+        "Docudrama",
+        "Political Drama"
+      ],
+      "mood": [
+        "Tense",
+        "Somber",
+        "Harrowing",
+        "Bleak",
+        "Suspenseful"
+      ],
+      "themes": [
+        "truth vs propaganda",
+        "sacrifice",
+        "government cover-up",
+        "human cost of disaster",
+        "heroism",
+        "institutional failure"
+      ],
+      "target_audience": [
+        "Adults",
+        "Prestige drama viewers",
+        "History enthusiasts"
+      ],
+      "programming_slot_fit": [
+        "Prime time",
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "The Crown",
+        "Band of Brothers",
+        "Chernobyl: The Lost Tapes",
+        "Fukushima 50",
+        "Deutschland 83"
+      ],
+      "content_warnings": [
+        "Graphic depictions of radiation sickness/injury",
+        "Death",
+        "Disturbing imagery",
+        "Strong language",
+        "Emotional distress"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Attentive viewing",
+        "Discussion-worthy watch"
+      ]
+    }
+  },
+  {
+    "content_id": "1017",
+    "title": "8½",
+    "year": 1963,
+    "description": "Guido Anselmi, a film director, finds himself creatively barren at the peak of his career. Urged by his doctors to rest, Anselmi heads for a luxurious resort, but a sorry group gathers—his producer, staff, actors, wife, mistress, and relatives—each one begging him to get on with the show. In retreat from their dependency, he fantasizes about past women and dreams of his childhood.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Art House Drama",
+        "Psychological Drama",
+        "Surrealist Fantasy",
+        "Meta-cinema / Film-about-filmmaking"
+      ],
+      "mood": [
+        "Introspective",
+        "Melancholic",
+        "Dreamlike",
+        "Ambiguous",
+        "Wistful",
+        "Bittersweet"
+      ],
+      "themes": [
+        "Creative crisis",
+        "Memory and childhood",
+        "Identity and self-deception",
+        "Infidelity and relationships",
+        "Escapism and fantasy",
+        "Art versus life",
+        "Existential anxiety"
+      ],
+      "target_audience": [
+        "Adult / Arthouse cinephiles",
+        "Late-night adult",
+        "Film school / Cinephile niche"
+      ],
+      "programming_slot_fit": [
+        "Late night",
+        "Prime time"
+      ],
+      "similar_content_suggestions": [
+        "La Dolce Vita",
+        "Amarcord",
+        "Stardust Memories",
+        "Persona",
+        "The Great Beauty",
+        "Synecdoche, New York"
+      ],
+      "content_warnings": [
+        "Suicide attempt/ideation",
+        "Infidelity",
+        "Mild sexual content",
+        "Emotional distress themes"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Solo contemplative viewing",
+        "Film club / Discussion screening",
+        "Classic cinema retrospective"
+      ]
+    }
+  },
+  {
+    "content_id": "1018",
+    "title": "Funny Games",
+    "year": 2007,
+    "description": "When Ann, husband George, and son Georgie arrive at their holiday home they are visited by a pair of polite and seemingly pleasant young men. Armed with deceptively sweet smiles and some golf clubs, they proceed to terrorize and torture the tight-knit clan, giving them until the next day to survive.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Psychological Thriller",
+        "Home Invasion Horror",
+        "Torture Horror",
+        "Meta-Cinema/Fourth-Wall-Breaking Thriller"
+      ],
+      "mood": [
+        "Tense",
+        "Disturbing",
+        "Bleak",
+        "Unsettling",
+        "Sadistic"
+      ],
+      "themes": [
+        "Violence as entertainment",
+        "Media complicity",
+        "Loss of control",
+        "Family under siege",
+        "Cruelty and sadism",
+        "Breakdown of civility"
+      ],
+      "target_audience": [
+        "Late-night adult",
+        "Mature arthouse/cinephile audience"
+      ],
+      "programming_slot_fit": [
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "Funny Games (1997 original)",
+        "The Strangers",
+        "Straw Dogs",
+        "You're Next",
+        "Hostel"
+      ],
+      "content_warnings": [
+        "Graphic violence",
+        "Torture",
+        "Disturbing content",
+        "Child in peril",
+        "Animal harm",
+        "Psychological abuse",
+        "Strong language"
+      ],
+      "viewing_context": [
+        "Late-night solo viewing",
+        "Film studies/critical viewing",
+        "Not suitable for family viewing"
+      ]
+    }
+  },
+  {
+    "content_id": "1019",
+    "title": "Fleabag",
+    "year": 2016,
+    "description": "A portrait into the mind of a dry-witted, sexual, angry, porn-watching, grief-riddled woman, trying to make sense of the world. As she hurls herself headlong at modern living, Fleabag is thrown roughly up against the walls of contemporary London, with all its frenetic energy, late nights, and bright lights.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Dark Comedy",
+        "Dramedy",
+        "Tragicomedy",
+        "British Sitcom"
+      ],
+      "mood": [
+        "Darkly humorous",
+        "Melancholic",
+        "Raw",
+        "Irreverent",
+        "Bittersweet"
+      ],
+      "themes": [
+        "grief",
+        "guilt",
+        "family dysfunction",
+        "loneliness",
+        "sexuality and intimacy",
+        "sisterhood",
+        "self-destruction",
+        "coping with loss"
+      ],
+      "target_audience": [
+        "Adults 18-49",
+        "Late-night adult",
+        "Fans of British comedy-drama"
+      ],
+      "programming_slot_fit": [
+        "Late night",
+        "Prime time"
+      ],
+      "similar_content_suggestions": [
+        "Catastrophe",
+        "Killing Eve",
+        "This Way Up",
+        "I May Destroy You",
+        "Chewing Gum"
+      ],
+      "content_warnings": [
+        "Strong sexual content",
+        "Explicit language",
+        "Grief and bereavement themes",
+        "References to death",
+        "Mature/adult themes"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Solo viewing",
+        "Binge-watching"
+      ]
+    }
+  },
+  {
+    "content_id": "1020",
+    "title": "Suspiria",
+    "year": 2018,
+    "description": "A darkness swirls at the center of a world-renowned dance company, one that will engulf the artistic director, an ambitious young dancer, and a grieving psychotherapist. Some will succumb to the nightmare. Others will finally wake up.",
+    "enriched_metadata": {
+      "content_warnings": [
+        "Graphic violence",
+        "Body horror",
+        "Disturbing imagery",
+        "Ritual sacrifice depiction",
+        "Strong language"
+      ],
+      "detailed_genres": [
+        "Occult Horror",
+        "Psychological Horror",
+        "Arthouse Horror",
+        "Witchcraft Drama",
+        "Supernatural Mystery"
+      ],
+      "mood": [
+        "Unsettling",
+        "Grim",
+        "Tense",
+        "Atmospheric",
+        "Nightmarish",
+        "Melancholic"
+      ],
+      "themes": [
+        "witchcraft and coven power struggles",
+        "trauma and grief",
+        "female bodily autonomy",
+        "good versus evil",
+        "historical guilt and fascism",
+        "identity and transformation",
+        "artistic obsession"
+      ],
+      "target_audience": [
+        "Late-night adult",
+        "Arthouse horror enthusiasts",
+        "Mature audiences"
+      ],
+      "programming_slot_fit": [
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "Suspiria (1977)",
+        "Black Swan",
+        "The Witch",
+        "Hereditary",
+        "Climax",
+        "Black Narcissus",
+        "Rosemary's Baby"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Solo viewing",
+        "Late-night horror marathon"
+      ]
+    }
+  },
+  {
+    "content_id": "1021",
+    "title": "Coherence",
+    "year": 2013,
+    "description": "Four couples gather for dinner the night a mysterious and powerful comet passes overhead.",
+    "enriched_metadata": {
+      "detailed_genres": [
+        "Psychological Thriller",
+        "Mind-Bending Sci-Fi",
+        "Parallel Universe Drama",
+        "Low-Budget Indie Sci-Fi"
+      ],
+      "mood": [
+        "Tense",
+        "Paranoid",
+        "Disorienting",
+        "Suspenseful",
+        "Claustrophobic"
+      ],
+      "themes": [
+        "identity",
+        "paranoia",
+        "reality and perception",
+        "friendship under strain",
+        "choice and consequence",
+        "the multiverse"
+      ],
+      "target_audience": [
+        "Late-night adult",
+        "Sci-Fi enthusiasts",
+        "Indie film fans"
+      ],
+      "programming_slot_fit": [
+        "Late night"
+      ],
+      "similar_content_suggestions": [
+        "Primer",
+        "The One I Love",
+        "Triangle",
+        "Timecrimes",
+        "Dark"
+      ],
+      "content_warnings": [
+        "Drug use",
+        "Violence",
+        "Intense psychological themes"
+      ],
+      "viewing_context": [
+        "Evening watch",
+        "Discussion-driven group viewing",
+        "Solo late-night viewing"
+      ]
+    }
+  }
+]
