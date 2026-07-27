@@ -129,13 +129,20 @@ endpoint. It implements a hybrid retrieve-then-rerank pipeline over the 21-item 
 by stages 1 and 2 (`data/enriched_final.json`):
 
 1. **Embedding retrieval** (local `sentence-transformers` model, `all-MiniLM-L6-v2`) narrows the
-   catalog down to the top `TOP_K_RETRIEVAL` (8) candidates by cosine similarity. Embeddings are
+   catalog down to the top `TOP_K_RETRIEVAL` (12) candidates by cosine similarity. Embeddings are
    computed once at server startup, not per request — this is the piece designed to scale to a
    real catalog of thousands of titles.
-2. **LLM reranking** (Claude, via a forced `submit_ranked_results` tool call) refines those 8
-   candidates down to the 3-5 most relevant for the specific query, with a short justification
+   `TOP_K_RETRIEVAL` was raised from an initial value of 8 to 12 after an audit found that
+   *Inception* ranked 10th of 21 for the query `"movies about dreams or alternate realities"`
+   (similarity score 0.291), just outside the old top-8 cutoff — so the LLM reranker never even
+   saw it as a candidate. 12 was the smallest round number that reliably includes it without
+   changing the embedding model or retrieval architecture.
+2. **LLM reranking** (Claude, via a forced `submit_ranked_results` tool call) refines those
+   candidates down to between 1 and 5 results for the specific query, with a short justification
    per result — this is the piece that captures nuanced query intent that pure vector similarity
-   can miss.
+   can miss. The reranker is explicitly instructed to be selective rather than exhaustive: it
+   returns only genuinely relevant titles, and will return just one result (as observed for the
+   Chernobyl/disaster-documentary query below) rather than padding the list with weak matches.
 
 ### Install dependencies
 
@@ -171,19 +178,38 @@ With [HTTPie](https://httpie.io/):
 http POST http://127.0.0.1:8000/search query="movies about dreams or alternate realities"
 ```
 
-### Example queries and expected results
+### Example queries and verified results
 
-- **`"movies about dreams or alternate realities"`** → *Coherence*, *8½*, *Spirited Away*,
-  *Suspiria* — all involve blurred or alternate realities, dreams, or parallel-world narratives.
-- **`"something funny and real"`** → *Fleabag*, *The Office*, *Parasite*, *Moonlight*, *Amélie* —
-  content blending humor with grounded, emotionally honest storytelling.
-- **`"true crime documentary about a disaster"`** → *Chernobyl* — the only title matching both
-  the true-story and disaster angle of the query.
+These are the actual results returned by a live run against the real Anthropic API (see
+`audit_stage3.py` for the full, reproducible audit — embedding scores, exact JSON responses, and
+whether the LLM reranker changed the embedding-only order):
+
+- **`"movies about dreams or alternate realities"`** → *Inception*, *Coherence*, *8½*,
+  *Spirited Away*, *Suspiria* (5 results). *Inception* was retrieved at rank 10/21 by embedding
+  similarity alone and was not in the reranker's candidate set before `TOP_K_RETRIEVAL` was raised
+  to 12; the reranker now places it first.
+- **`"something funny and real"`** → *Fleabag*, *The Office*, *Parasite*, *Amélie* (4 results —
+  *Moonlight* was retrieved by embedding similarity but the reranker judged it less "funny" than
+  the other four and dropped it).
+- **`"true crime documentary about a disaster"`** → *Chernobyl* only (1 result). Both the
+  embedding retrieval and the LLM reranker agree there is exactly one genuine match in this
+  21-item catalog; the reranker does not pad the response with weaker titles to reach a higher
+  count.
 
 Each result includes a `relevance_reason` explaining, in plain language, why the LLM reranker
 selected that title for the query — useful for a Content team member auditing why a given result
 surfaced.
 
-An empty or whitespace-only `query` returns `400 Bad Request` with a clear error message. If the
-LLM reranking call fails for any reason, the endpoint falls back to the top embedding-retrieved
-candidates rather than crashing.
+### Error handling and fallback behavior (verified)
+
+- An empty or whitespace-only `query` returns `400 Bad Request` with a clear error message.
+- **If `ANTHROPIC_API_KEY` is missing entirely**, the application still starts normally (a message
+  is printed noting that LLM reranking is disabled, without ever printing the key itself), and
+  `POST /search` still returns `200` using the embedding-only fallback: the top 3 retrieved
+  candidates, each with `relevance_reason: "Matched by semantic similarity (LLM reranking
+  unavailable)."` Verified live by temporarily moving `.env` aside, starting the server, confirming
+  a `200` response with fallback results, then restoring `.env`.
+- **If the LLM call itself fails** (API error, malformed tool output, or an invalid `content_id`
+  in the response) after the server has started with a valid key, the same embedding-only fallback
+  is used for that request — the endpoint never crashes or returns an error to the caller because
+  of an LLM failure.

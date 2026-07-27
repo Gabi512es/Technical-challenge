@@ -20,15 +20,21 @@ from sentence_transformers import SentenceTransformer
 load_dotenv()
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-if not ANTHROPIC_API_KEY:
-    raise RuntimeError(
-        "ANTHROPIC_API_KEY is not set. Copy .env.example to .env and fill in your Anthropic API key."
-    )
 
 MODEL = "claude-sonnet-5"
 REQUEST_TIMEOUT = 30  # seconds
 
-_anthropic_client = Anthropic(api_key=ANTHROPIC_API_KEY)
+# The Anthropic client is optional: this prototype must still start and serve
+# /search (via the embedding-only fallback) when no key is configured. Never
+# log the key value itself, only whether one was found.
+if ANTHROPIC_API_KEY:
+    _anthropic_client = Anthropic(api_key=ANTHROPIC_API_KEY)
+else:
+    _anthropic_client = None
+    print(
+        "[api.search] ANTHROPIC_API_KEY is not set: LLM reranking is disabled. "
+        "Falling back to embedding-only retrieval for every query."
+    )
 
 # ---------------------------------------------------------------------------
 # A. Embedding setup
@@ -84,7 +90,7 @@ def embed_all_items(items: list) -> dict:
 # B. Retrieval step
 # ---------------------------------------------------------------------------
 
-TOP_K_RETRIEVAL = 8
+TOP_K_RETRIEVAL = 12
 
 
 def _cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
@@ -137,6 +143,7 @@ RERANK_TOOL = {
             "results": {
                 "type": "array",
                 "minItems": 1,
+                "maxItems": 5,
                 "items": {
                     "type": "object",
                     "properties": {
@@ -160,8 +167,12 @@ RERANK_TOOL = {
 RERANK_SYSTEM_PROMPT = """You are a content search assistant for an internal catalog tool used \
 by a streaming platform's Content team (catalog curation and channel programming, not a \
 consumer-facing feature). Given a natural-language search query and a shortlist of candidate \
-titles already retrieved by semantic similarity, select and order the 3 to 5 candidates that \
-best match the query's specific intent, and provide a short justification for each.
+titles already retrieved by semantic similarity, select and order between 1 and 5 candidates \
+that genuinely match the query's specific intent, and provide a short justification for each.
+
+Be selective, not exhaustive. Only include a candidate if it truly matches the query. If just \
+one or two candidates genuinely match, return only those -- do not pad the response with weaker \
+or tangentially related titles just to reach a higher count.
 
 Only select from the candidates provided to you. Never invent a title or a content_id that is \
 not in the given list.
@@ -189,7 +200,10 @@ def build_rerank_prompt(query: str, candidates: list) -> str:
             f"  Viewing context: {', '.join(metadata.get('viewing_context') or []) or 'not available'}"
         )
 
-    lines.append("\nSelect and order the 3-5 most relevant candidates for this query.")
+    lines.append(
+        "\nSelect and order between 1 and 5 candidates for this query -- only the ones that "
+        "genuinely match. Do not pad the response with weak matches just to reach a higher count."
+    )
 
     return "\n".join(lines)
 
@@ -202,7 +216,8 @@ def rerank_with_llm(query: str, candidates: list) -> list:
     On any failure (API error, malformed output, or a returned content_id
     that isn't one of the candidates), falls back to the top 3 embedding-
     retrieved candidates directly -- the endpoint must always return
-    something rather than crash.
+    something rather than crash. The same fallback is used immediately,
+    with no API call attempted, when no Anthropic client is configured.
     """
     if not candidates:
         return []
@@ -214,6 +229,10 @@ def rerank_with_llm(query: str, candidates: list) -> list:
         }
         for candidate in candidates[:3]
     ]
+
+    if _anthropic_client is None:
+        print(f"[rerank_with_llm] No Anthropic client configured for query '{query}': using embedding fallback.")
+        return fallback
 
     prompt = build_rerank_prompt(query, candidates)
 

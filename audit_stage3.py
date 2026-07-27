@@ -123,9 +123,9 @@ def main() -> None:
 
     print("\nIMPORTANT CONFIGURATION NOTE")
     print(
-        "The current api/search.py raises RuntimeError during import when "
-        "ANTHROPIC_API_KEY is absent. Therefore, an entirely missing key prevents "
-        "the API from starting; the fallback only protects failures occurring after startup."
+        "If ANTHROPIC_API_KEY is missing, the API still starts normally. LLM reranking is "
+        "disabled in that case, and POST /search falls back to embedding-only retrieval for "
+        "every query -- the endpoint remains available and returns HTTP 200."
     )
 
 
