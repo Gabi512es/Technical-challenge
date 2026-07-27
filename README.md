@@ -60,8 +60,8 @@ We should be able to clone/unzip your project, follow your README, and run the w
    python3 -m pip install -r requirements.txt        # stages 1-2 (notebooks)
    python3 -m pip install -r api/requirements.txt    # stage 3 (search API)
    ```
-3. **Run stage 1 end-to-end.** Open `01_fetch_raw_data.ipynb` and *Restart Kernel then Run All* (not just re-running cells on a kernel that may already hold stale state) — this guarantees a clean read of `.env` and produces `data/fetched_raw.json`.
-4. **Run stage 2 end-to-end.** Open `02_enrich_metadata.ipynb`, *Restart Kernel then Run All*, producing `data/enriched_final.json`.
+3. **Run stage 1 end-to-end.** Open `01_fetch_raw_data.ipynb` and use *Restart Kernel* before *Run All* — not just re-running cells on an already-running kernel. A kernel that already ran once may have cached an empty or stale `.env` value in memory even after the file has been edited and saved, so restarting guarantees a fresh read of `.env` before producing `data/fetched_raw.json`.
+4. **Run stage 2 end-to-end.** Open `02_enrich_metadata.ipynb` and use *Restart Kernel* before *Run All*, for the same reason: this guarantees `ANTHROPIC_API_KEY` is freshly loaded from `.env` rather than a stale value cached from a previous kernel session, before producing `data/enriched_final.json`.
 5. **Start the search API.**
    ```bash
    uvicorn api.main:app --reload
@@ -211,6 +211,12 @@ project root:
 
 ```bash
 uvicorn api.main:app --reload
+```
+
+If `uvicorn` is not found on PATH, use this instead:
+
+```bash
+python3 -m uvicorn api.main:app --reload
 ```
 
 The first startup downloads the `all-MiniLM-L6-v2` model (a few dozen MB, cached afterwards) and
