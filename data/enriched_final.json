@@ -7,29 +7,29 @@
     "enriched_metadata": {
       "detailed_genres": [
         "Prison Drama",
-        "Redemption Drama",
-        "Crime Drama"
+        "Crime Drama",
+        "Character Study"
       ],
       "mood": [
         "Inspiring",
         "Melancholic",
         "Hopeful",
-        "Emotional"
+        "Tense"
       ],
       "themes": [
         "hope",
         "friendship",
         "redemption",
-        "injustice",
+        "wrongful imprisonment",
         "corruption",
-        "institutionalization",
+        "institutional injustice",
         "perseverance",
         "freedom"
       ],
       "target_audience": [
         "Adults 25-54",
-        "Prestige drama viewers",
-        "Prime time"
+        "Prestige Drama Viewers",
+        "Evening Prime Time Audience"
       ],
       "programming_slot_fit": [
         "Prime time",
@@ -40,18 +40,18 @@
         "Escape from Alcatraz",
         "American History X",
         "The Count of Monte Cristo",
-        "Cool Hand Luke"
+        "A Prophet"
       ],
       "content_warnings": [
         "Violence",
-        "Prison abuse",
-        "Sexual assault references",
+        "Prison brutality",
         "Strong language",
+        "Sexual assault (implied)",
         "Murder"
       ],
       "viewing_context": [
         "Evening watch",
-        "Weekend deep-dive",
+        "Weekend deep-dive viewing",
         "Award-season programming block"
       ]
     }
@@ -63,48 +63,49 @@
     "description": "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
     "enriched_metadata": {
       "detailed_genres": [
+        "Mind-bending Sci-Fi",
         "Heist Thriller",
-        "Psychological Sci-Fi",
-        "Mind-bending Thriller"
+        "Psychological Thriller"
       ],
       "mood": [
         "Tense",
         "Intellectual",
-        "Dreamlike",
-        "Suspenseful"
+        "Suspenseful",
+        "Dreamlike"
       ],
       "themes": [
-        "reality vs illusion",
+        "reality vs. illusion",
         "guilt and redemption",
         "memory",
         "subconscious manipulation",
         "identity",
-        "loss"
+        "obsession"
       ],
       "target_audience": [
         "Adults 18-49",
-        "Prime time",
-        "Fans of high-concept sci-fi"
+        "Sci-Fi enthusiasts",
+        "Prime time general audience"
       ],
       "programming_slot_fit": [
         "Prime time",
         "Late night"
       ],
       "similar_content_suggestions": [
-        "The Matrix",
         "Shutter Island",
-        "Interstellar",
+        "The Matrix",
         "Memento",
-        "The Prestige"
+        "Interstellar",
+        "Tenet",
+        "Source Code"
       ],
       "content_warnings": [
         "Violence",
-        "Intense action sequences",
-        "Thematic complexity"
+        "Intense/frightening scenes",
+        "Brief strong language"
       ],
       "viewing_context": [
         "Evening watch",
-        "Focused viewing (requires attention)",
+        "Attentive/focused viewing",
         "Discussion-worthy group watch"
       ]
     }
@@ -119,51 +120,50 @@
         "Dark Comedy",
         "Social Satire",
         "Psychological Thriller",
-        "Class-Conflict Drama"
+        "Class-conflict Drama"
       ],
       "mood": [
         "Tense",
-        "Darkly humorous",
+        "Darkly Humorous",
         "Unsettling",
         "Suspenseful",
-        "Melancholic"
+        "Biting"
       ],
       "themes": [
         "class inequality",
-        "family loyalty",
-        "deception and infiltration",
-        "social mobility",
-        "capitalism and greed",
-        "hidden resentment"
+        "social infiltration",
+        "family survival",
+        "capitalism critique",
+        "deception",
+        "aspiration and desperation"
       ],
       "target_audience": [
-        "Adults 25-54",
-        "Prestige/awards film viewers",
-        "Late-night adult",
-        "Foreign/arthouse film enthusiasts"
+        "Adults 18-49",
+        "Prestige/awards-oriented viewers",
+        "Late-night adult"
       ],
       "programming_slot_fit": [
-        "Late night",
-        "Prime time"
+        "Prime time",
+        "Late night"
       ],
       "similar_content_suggestions": [
-        "Shoplifters",
         "Snowpiercer",
+        "Shoplifters",
         "The Handmaiden",
-        "Burning",
+        "Us",
         "Knives Out",
-        "Us"
+        "Burning"
       ],
       "content_warnings": [
         "Violence",
         "Strong language",
-        "Disturbing/graphic content",
-        "Mature themes"
+        "Disturbing imagery",
+        "Class-based discrimination themes"
       ],
       "viewing_context": [
         "Evening watch",
-        "Discussion-driven group viewing",
-        "Award-season programming block"
+        "Discussion/film club viewing",
+        "Date night for cinephiles"
       ]
     }
   },
@@ -181,24 +181,23 @@
       ],
       "mood": [
         "Whimsical",
+        "Witty",
         "Bittersweet",
-        "Quirky",
-        "Fast-paced",
-        "Nostalgic"
+        "Nostalgic",
+        "Fast-paced"
       ],
       "themes": [
-        "mentorship",
-        "friendship",
+        "mentor-protégé relationship",
         "loyalty",
-        "upheaval of war",
-        "nostalgia for a bygone era",
+        "nostalgia for a lost era",
         "class and privilege",
-        "theft and inheritance"
+        "friendship",
+        "upheaval of war"
       ],
       "target_audience": [
         "Adults 25-54",
         "Film enthusiasts",
-        "Prime time"
+        "Prime time general audience"
       ],
       "programming_slot_fit": [
         "Prime time",
@@ -209,17 +208,17 @@
         "The Royal Tenenbaums",
         "Fantastic Mr. Fox",
         "The French Dispatch",
-        "Amélie"
+        "In Bruges"
       ],
       "content_warnings": [
         "Violence",
         "Brief strong language",
-        "Gunfight scenes"
+        "Mild sexual content"
       ],
       "viewing_context": [
         "Evening watch",
         "Date night",
-        "Film club / discussion viewing"
+        "Solo art-house viewing"
       ]
     }
   },
@@ -231,26 +230,26 @@
     "enriched_metadata": {
       "detailed_genres": [
         "Nature Documentary",
-        "Wildlife Documentary",
-        "Miniseries"
+        "Wildlife Miniseries"
       ],
       "mood": [
         "Inspiring",
-        "Relaxing",
         "Awe-inspiring",
+        "Relaxing",
         "Captivating"
       ],
       "themes": [
         "survival",
-        "adaptation to environment",
+        "adaptation",
+        "nature",
         "climate change",
-        "nature's diversity",
-        "habitat exploration"
+        "habitats",
+        "biodiversity"
       ],
       "target_audience": [
         "Family / Daytime",
+        "Educational viewers",
         "Nature enthusiasts",
-        "Educational viewing",
         "All ages"
       ],
       "programming_slot_fit": [
@@ -266,7 +265,7 @@
         "Frozen Planet"
       ],
       "content_warnings": [
-        "Depictions of predation/animal death in nature"
+        "Mild scenes of predation/animal peril"
       ],
       "viewing_context": [
         "Family movie night",
@@ -284,8 +283,8 @@
     "enriched_metadata": {
       "detailed_genres": [
         "Crime Drama",
-        "Neo-Western",
         "Psychological Thriller",
+        "Neo-Western",
         "Dark Comedy"
       ],
       "mood": [
@@ -299,14 +298,14 @@
         "fall from grace",
         "morality and corruption",
         "family and legacy",
-        "pride and ego",
         "mortality",
+        "pride and ego",
         "transformation of identity",
         "consequences of crime"
       ],
       "target_audience": [
         "Late-night adult",
-        "Adults 18-49"
+        "Mature drama enthusiasts"
       ],
       "programming_slot_fit": [
         "Late night",
@@ -314,23 +313,22 @@
       ],
       "similar_content_suggestions": [
         "Better Call Saul",
-        "The Sopranos",
+        "The Wire",
         "Ozark",
         "Narcos",
-        "Weeds",
-        "The Wire"
+        "The Sopranos"
       ],
       "content_warnings": [
         "Violence",
         "Strong language",
-        "Drug use/production",
+        "Drug use",
         "Disturbing content",
-        "Mature themes"
+        "Terminal illness themes"
       ],
       "viewing_context": [
         "Evening watch",
-        "Binge viewing",
-        "Adult solo or partner viewing"
+        "Binge-watching",
+        "Mature solo or adult group viewing"
       ]
     }
   },
@@ -343,50 +341,49 @@
       "detailed_genres": [
         "Whimsical Romantic Comedy",
         "Magic Realism",
-        "Feel-good Character Study"
+        "Character-Driven Dramedy"
       ],
       "mood": [
         "Whimsical",
-        "Charming",
         "Heartwarming",
         "Nostalgic",
-        "Lighthearted"
+        "Charming",
+        "Uplifting"
       ],
       "themes": [
         "kindness",
-        "self-discovery",
+        "shyness and self-discovery",
         "love and courage",
-        "loneliness and connection",
         "childhood memory",
+        "connection and community",
         "finding one's place in the world"
       ],
       "target_audience": [
         "Adults 18-49",
-        "Date-night viewers",
-        "Fans of foreign/arthouse film",
-        "Romance enthusiasts"
+        "Date Night Viewers",
+        "Fans of Foreign/Arthouse Film",
+        "Romance Enthusiasts"
       ],
       "programming_slot_fit": [
         "Prime time",
         "Weekend afternoon"
       ],
       "similar_content_suggestions": [
-        "The Fabulous Destiny of Amélie Poulain (alt title)",
+        "The Fabulous Destiny of Amélie Poulain (alt. title reference)",
         "Chocolat",
         "Midnight in Paris",
-        "Delicatessen",
-        "The City of Lost Children",
+        "The Grand Budapest Hotel",
         "Paris, je t'aime"
       ],
       "content_warnings": [
-        "Mild sexual content/references",
-        "Brief adult themes (sex shop setting)"
+        "Mild sexual content/references (sex shop setting)",
+        "Brief nudity references"
       ],
       "viewing_context": [
-        "Evening watch",
         "Date night",
+        "Evening watch",
         "Cozy solo viewing",
-        "Weekend relaxation"
+        "Foreign film night"
       ]
     }
   },
@@ -398,9 +395,9 @@
     "enriched_metadata": {
       "detailed_genres": [
         "Superhero",
-        "Crime Drama",
-        "Psychological Thriller",
-        "Neo-noir"
+        "Neo-noir crime thriller",
+        "Psychological thriller",
+        "Comic book adaptation"
       ],
       "mood": [
         "Dark",
@@ -410,17 +407,18 @@
         "Chaotic"
       ],
       "themes": [
-        "chaos vs order",
-        "moral corruption",
-        "vigilantism",
-        "sacrifice",
-        "duality of heroism and villainy",
-        "the cost of justice"
+        "Chaos vs order",
+        "Moral ambiguity",
+        "Vigilante justice",
+        "Corruption",
+        "Sacrifice",
+        "The cost of heroism",
+        "Escalation of crime and violence"
       ],
       "target_audience": [
         "Adults",
-        "Teens",
-        "Superhero/Comic fans",
+        "Teens 15+",
+        "Superhero fans",
         "Prime time general audience"
       ],
       "programming_slot_fit": [
@@ -430,20 +428,20 @@
       "similar_content_suggestions": [
         "Batman Begins",
         "The Dark Knight Rises",
-        "Joker",
         "Se7en",
+        "Joker",
         "Heat",
         "Watchmen"
       ],
       "content_warnings": [
         "Violence",
-        "Disturbing images",
+        "Disturbing content",
         "Strong language",
-        "Intense psychological themes"
+        "Intense scenes of peril"
       ],
       "viewing_context": [
         "Evening watch",
-        "Weekend blockbuster night",
+        "Weekend movie night",
         "Attention-required viewing"
       ]
     }
@@ -455,61 +453,54 @@
     "description": "The tender, heartbreaking story of a young man’s struggle to find himself, told across three defining chapters in his life as he experiences the ecstasy, pain, and beauty of falling in love, while grappling with his own sexuality.",
     "enriched_metadata": {
       "detailed_genres": [
-        "Coming-of-age Drama",
-        "LGBTQ Drama",
-        "Character Study",
-        "Urban Drama"
+        "Coming-of-age drama",
+        "LGBT drama",
+        "Character study",
+        "Urban drama"
       ],
       "mood": [
-        "Tender",
         "Melancholic",
-        "Intimate",
+        "Tender",
+        "Introspective",
         "Poignant",
-        "Contemplative"
+        "Bittersweet"
       ],
       "themes": [
         "self-discovery",
         "sexuality and identity",
         "masculinity",
+        "love",
+        "father figures",
         "addiction",
         "poverty",
-        "parent-child relationships",
-        "love",
-        "isolation",
-        "coming of age",
-        "homophobia"
+        "bullying",
+        "belonging"
       ],
       "target_audience": [
         "Adults",
-        "LGBTQ audiences",
-        "Awards/prestige drama viewers",
-        "Mature young adults"
+        "Mature teens",
+        "LGBT audiences",
+        "Award/prestige drama viewers"
       ],
       "programming_slot_fit": [
-        "Prime time",
-        "Late night"
+        "Late night",
+        "Prime time"
       ],
-      "similar_content_suggestions": [
-        "Call Me By Your Name",
-        "If Beale Street Could Talk",
-        "Boyhood",
-        "Precious",
-        "The Fits",
-        "Pariah"
-      ],
+      "similar_content_suggestions": "[\"Call Me by Your Name\", \"Boyhood\", \"The Florida Project\", momtimes\"Precious\", \"If Beale Street Could Talk\", \"Brokeback Mountain\"]",
       "content_warnings": [
         "Drug use",
-        "Drug addiction",
-        "Violence",
+        "Drug abuse",
         "Bullying",
         "Homophobia",
+        "Violence",
         "Strong language",
         "Mature themes"
       ],
       "viewing_context": [
         "Evening watch",
         "Solo reflective viewing",
-        "Discussion/film club screening"
+        "Date night for mature audiences",
+        "Discussion/film club viewing"
       ]
     }
   },
@@ -520,32 +511,32 @@
     "description": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
     "enriched_metadata": {
       "detailed_genres": [
-        "Coming-of-age Fantasy",
-        "Japanese Animation",
-        "Mythological Adventure",
-        "Magical Realism"
+        "Anime Fantasy",
+        "Coming-of-Age",
+        "Magical Realism",
+        "Japanese Mythology-Inspired Fantasy"
       ],
       "mood": [
         "Whimsical",
-        "Dreamlike",
-        "Suspenseful",
         "Wondrous",
+        "Eerie",
+        "Heartwarming",
         "Melancholic"
       ],
       "themes": [
-        "coming of age",
         "courage",
         "identity",
         "family bonds",
-        "greed and consumerism",
-        "perseverance",
-        "transformation"
+        "coming of age",
+        "greed and excess",
+        "transformation",
+        "perseverance"
       ],
       "target_audience": [
         "Family / Daytime",
-        "Kids and Tweens",
+        "Kids & Tweens",
         "Animation Enthusiasts",
-        "Weekend Family Viewing"
+        "General Family Audience"
       ],
       "programming_slot_fit": [
         "Family slot",
@@ -556,18 +547,20 @@
         "My Neighbor Totoro",
         "Howl's Moving Castle",
         "Princess Mononoke",
-        "Ponyo",
         "Kiki's Delivery Service",
-        "The Secret World of Arrietty"
+        "The Secret World of Arrietty",
+        "Ponyo"
       ],
       "content_warnings": [
-        "Mild peril/scary imagery",
-        "Fantasy transformation body horror (mild)"
+        "Mild frightening imagery",
+        "Fantasy peril",
+        "Thematic elements involving transformation/body horror (parents turning into pigs)"
       ],
       "viewing_context": [
         "Family movie night",
-        "Weekend afternoon viewing",
-        "Rainy day watch"
+        "Weekend viewing",
+        "Background viewing for older kids",
+        "Rewatch-friendly comfort viewing"
       ]
     }
   },
@@ -579,9 +572,9 @@
     "enriched_metadata": {
       "detailed_genres": [
         "Classic Romantic Drama",
-        "Wartime Drama",
-        "Film Noir",
-        "Political Thriller"
+        "Wartime Melodrama",
+        "Film Noir-influenced Drama",
+        "Espionage Drama"
       ],
       "mood": [
         "Romantic",
@@ -591,39 +584,39 @@
         "Nostalgic"
       ],
       "themes": [
-        "sacrifice",
-        "love and duty",
-        "political resistance",
-        "moral ambiguity",
-        "exile",
-        "patriotism",
+        "love and sacrifice",
+        "moral redemption",
+        "war and displacement",
+        "resistance against tyranny",
+        "conflicted loyalty",
         "lost love"
       ],
       "target_audience": [
         "Classic film enthusiasts",
-        "Adult drama viewers",
+        "Adults 30+",
         "Prime time general audience"
       ],
       "programming_slot_fit": [
         "Prime time",
-        "Late night"
+        "Weekend afternoon"
       ],
       "similar_content_suggestions": [
         "The Third Man",
         "Notorious",
         "To Have and Have Not",
         "Gone with the Wind",
-        "The Maltese Falcon"
+        "The English Patient"
       ],
       "content_warnings": [
-        "War violence",
-        "Wartime political themes",
-        "Smoking depiction"
+        "War violence (mild, period-typical)",
+        "Depictions of Nazi occupation and political persecution",
+        "Smoking and period-typical attitudes"
       ],
       "viewing_context": [
         "Evening watch",
         "Classic movie night",
-        "Date night"
+        "Date night",
+        "Background viewing for ambiance"
       ]
     }
   },
@@ -637,26 +630,28 @@
         "Psychological Horror",
         "Social Thriller",
         "Satirical Horror",
-        "Mystery"
+        "Mystery/Suspense"
       ],
       "mood": [
         "Tense",
         "Unsettling",
         "Suspenseful",
-        "Darkly Satirical"
+        "Darkly satirical",
+        "Anxious"
       ],
       "themes": [
         "racism",
         "interracial relationships",
-        "identity and autonomy",
-        "manipulation and control",
+        "identity and control",
+        "manipulation",
         "family secrets",
-        "social commentary"
+        "social satire",
+        "loss of autonomy"
       ],
       "target_audience": [
-        "Adults 18-49",
         "Late-night adult",
-        "Horror/Thriller enthusiasts"
+        "Young adults",
+        "Horror/thriller enthusiasts"
       ],
       "programming_slot_fit": [
         "Late night",
@@ -665,21 +660,24 @@
       "similar_content_suggestions": [
         "Us",
         "The Stepford Wives",
-        "Don't Breathe",
-        "Rosemary's Baby",
-        "The Invitation"
+        "Coherence",
+        "The Invitation",
+        "Hereditary",
+        "Antebellum"
       ],
       "content_warnings": [
+        "Racism/racial themes",
         "Violence",
-        "Racial themes/racism",
         "Disturbing content",
-        "Strong language",
-        "Body horror elements"
+        "Kidnapping",
+        "Psychological manipulation",
+        "Strong language"
       ],
       "viewing_context": [
         "Evening watch",
-        "Thought-provoking discussion viewing",
-        "Halloween/horror programming block"
+        "Discussion-driven group viewing",
+        "Date night (for mature audiences)",
+        "Thought-provoking solo watch"
       ]
     }
   },
@@ -702,17 +700,18 @@
         "Heartwarming"
       ],
       "themes": [
-        "workplace relationships",
+        "workplace dynamics",
         "friendship",
-        "office culture",
-        "mundanity of everyday work",
         "romance",
-        "personal growth"
+        "mundanity of everyday life",
+        "employer-employee relationships",
+        "corporate culture"
       ],
       "target_audience": [
         "Adults 18-49",
         "Young Adults",
-        "Prime time general audience"
+        "Prime time",
+        "General comedy fans"
       ],
       "programming_slot_fit": [
         "Prime time",
@@ -721,20 +720,20 @@
       "similar_content_suggestions": [
         "Parks and Recreation",
         "Brooklyn Nine-Nine",
-        "The Office (UK)",
         "Superstore",
-        "Modern Family"
+        "Modern Family",
+        "30 Rock"
       ],
       "content_warnings": [
         "Mild language",
         "Sexual references",
-        "Adult humor"
+        "Awkward/cringe humor"
       ],
       "viewing_context": [
         "Evening watch",
+        "Binge-watching",
         "Background viewing",
-        "Binge watching",
-        "Casual comedy viewing"
+        "Casual watch with friends"
       ]
     }
   },
@@ -754,46 +753,43 @@
         "Intense",
         "Frenetic",
         "Adrenaline-fueled",
-        "Bleak",
-        "Empowering"
+        "Bleak"
       ],
       "themes": [
         "survival",
-        "freedom",
+        "freedom quest",
         "rebellion against tyranny",
         "redemption",
-        "scarcity of resources",
-        "found family"
+        "on the run"
       ],
       "target_audience": [
-        "Action fans",
         "Late-night adult",
-        "Teens 16+",
-        "Sci-fi enthusiasts"
+        "Action fans",
+        "Teens/Adults 16+"
       ],
       "programming_slot_fit": [
         "Prime time",
-        "Late night",
-        "Weekend afternoon"
+        "Late night"
       ],
       "similar_content_suggestions": [
         "Mad Max 2: The Road Warrior",
         "Mad Max Beyond Thunderdome",
         "The Road Warrior",
-        "Death Race",
         "Dredd",
-        "Snowpiercer"
+        "Waterworld",
+        "Death Race"
       ],
       "content_warnings": [
-        "Intense violence",
-        "Disturbing images",
-        "Strong action sequences",
-        "Thematic content involving oppression/slavery"
+        "Violence",
+        "Intense action sequences",
+        "Disturbing imagery",
+        "Peril",
+        "Mild language"
       ],
       "viewing_context": [
         "Evening watch",
-        "High-energy group viewing",
-        "Action movie night"
+        "High-energy movie night",
+        "Action marathon"
       ]
     }
   },
@@ -809,9 +805,9 @@
         "Biographical Documentary"
       ],
       "mood": [
-        "Meditative",
-        "Inspiring",
         "Contemplative",
+        "Inspiring",
+        "Meditative",
         "Reverent"
       ],
       "themes": [
@@ -823,28 +819,25 @@
         "tradition vs succession"
       ],
       "target_audience": [
-        "Adults 25-54",
+        "Adults 30+",
         "Foodies / Culinary enthusiasts",
         "Documentary enthusiasts"
       ],
       "programming_slot_fit": [
-        "Prime time",
         "Late night",
         "Weekend afternoon"
       ],
       "similar_content_suggestions": [
         "Chef's Table",
         "The Mind of a Chef",
-        "El Bulli: Cooking in Progress",
-        "Tampopo",
-        "Somm"
+        "Somm",
+        "Step Up to the Plate"
       ],
       "content_warnings": [],
       "viewing_context": [
         "Evening watch",
         "Background viewing",
-        "Solo viewing",
-        "Dinner-time viewing"
+        "Solo contemplative viewing"
       ]
     }
   },
@@ -856,27 +849,27 @@
     "enriched_metadata": {
       "detailed_genres": [
         "Historical Drama",
-        "Disaster Drama",
         "Docudrama",
+        "Disaster Drama",
         "Political Drama"
       ],
       "mood": [
         "Tense",
-        "Somber",
-        "Harrowing",
         "Bleak",
-        "Suspenseful"
+        "Harrowing",
+        "Somber",
+        "Sobering"
       ],
       "themes": [
-        "truth vs propaganda",
         "sacrifice",
+        "truth vs. propaganda",
+        "man-made catastrophe",
         "government cover-up",
-        "human cost of disaster",
         "heroism",
-        "institutional failure"
+        "consequences of negligence"
       ],
       "target_audience": [
-        "Adults",
+        "Adults 25-54",
         "Prestige drama viewers",
         "History enthusiasts"
       ],
@@ -886,22 +879,21 @@
       ],
       "similar_content_suggestions": [
         "The Crown",
-        "Band of Brothers",
         "Chernobyl: The Lost Tapes",
+        "Deepwater Horizon",
         "Fukushima 50",
-        "Deutschland 83"
+        "Band of Brothers"
       ],
       "content_warnings": [
         "Graphic depictions of radiation sickness/injury",
         "Death",
         "Disturbing imagery",
-        "Strong language",
-        "Emotional distress"
+        "Strong language"
       ],
       "viewing_context": [
         "Evening watch",
-        "Attentive viewing",
-        "Discussion-worthy watch"
+        "Focused viewing",
+        "Discussion-driven watch (documentary-style drama)"
       ]
     }
   },
@@ -914,30 +906,29 @@
       "detailed_genres": [
         "Art House Drama",
         "Psychological Drama",
-        "Surrealist Fantasy",
-        "Meta-cinema / Film-about-filmmaking"
+        "Surrealist Cinema",
+        "Meta-Cinema"
       ],
       "mood": [
         "Introspective",
-        "Melancholic",
         "Dreamlike",
-        "Ambiguous",
-        "Wistful",
-        "Bittersweet"
+        "Melancholic",
+        "Whimsical",
+        "Ambiguous"
       ],
       "themes": [
-        "Creative crisis",
-        "Memory and childhood",
-        "Identity and self-deception",
-        "Infidelity and relationships",
-        "Escapism and fantasy",
-        "Art versus life",
-        "Existential anxiety"
+        "creative crisis",
+        "memory and childhood",
+        "infidelity",
+        "identity and self-deception",
+        "escapism through fantasy",
+        "the burden of fame",
+        "existential anxiety"
       ],
       "target_audience": [
-        "Adult / Arthouse cinephiles",
-        "Late-night adult",
-        "Film school / Cinephile niche"
+        "Arthouse / Cinephile",
+        "Adult Prime time",
+        "Film Studies / Educational"
       ],
       "programming_slot_fit": [
         "Late night",
@@ -947,21 +938,18 @@
         "La Dolce Vita",
         "Amarcord",
         "Stardust Memories",
-        "Persona",
-        "The Great Beauty",
-        "Synecdoche, New York"
+        "All That Jazz",
+        "Persona"
       ],
       "content_warnings": [
-        "Suicide attempt/ideation",
-        "Infidelity",
-        "Mild sexual content",
-        "Emotional distress themes"
+        "Depictions of suicide attempt",
+        "Infidelity/extramarital affairs",
+        "Mature themes of depression"
       ],
       "viewing_context": [
         "Evening watch",
-        "Solo contemplative viewing",
-        "Film club / Discussion screening",
-        "Classic cinema retrospective"
+        "Solo reflective viewing",
+        "Film club / discussion screening"
       ]
     }
   },
@@ -972,53 +960,53 @@
     "description": "When Ann, husband George, and son Georgie arrive at their holiday home they are visited by a pair of polite and seemingly pleasant young men. Armed with deceptively sweet smiles and some golf clubs, they proceed to terrorize and torture the tight-knit clan, giving them until the next day to survive.",
     "enriched_metadata": {
       "detailed_genres": [
-        "Psychological Thriller",
-        "Home Invasion Horror",
-        "Torture Horror",
-        "Meta-Cinema/Fourth-Wall-Breaking Thriller"
+        "Psychological Horror",
+        "Home Invasion Thriller",
+        "Torture Drama",
+        "Meta-Cinema"
       ],
       "mood": [
-        "Tense",
         "Disturbing",
+        "Tense",
         "Bleak",
         "Unsettling",
-        "Sadistic"
+        "Cold"
       ],
       "themes": [
-        "Violence as entertainment",
-        "Media complicity",
-        "Loss of control",
-        "Family under siege",
-        "Cruelty and sadism",
-        "Breakdown of civility"
+        "violence as entertainment",
+        "media complicity",
+        "family under siege",
+        "loss of control",
+        "cruelty and sadism",
+        "breaking the fourth wall"
       ],
       "target_audience": [
         "Late-night adult",
-        "Mature arthouse/cinephile audience"
+        "Arthouse/cinephile audiences",
+        "Mature horror fans"
       ],
       "programming_slot_fit": [
         "Late night"
       ],
       "similar_content_suggestions": [
-        "Funny Games (1997 original)",
+        "Funny Games (1997)",
         "The Strangers",
-        "Straw Dogs",
+        "Michael Haneke's Cache",
         "You're Next",
-        "Hostel"
+        "Straw Dogs"
       ],
       "content_warnings": [
         "Graphic violence",
         "Torture",
-        "Disturbing content",
-        "Child in peril",
-        "Animal harm",
         "Psychological abuse",
-        "Strong language"
+        "Disturbing content",
+        "Death of a child",
+        "Animal death"
       ],
       "viewing_context": [
-        "Late-night solo viewing",
-        "Film studies/critical viewing",
-        "Not suitable for family viewing"
+        "Evening watch",
+        "Solo viewing",
+        "Discussion/film club viewing"
       ]
     }
   },
@@ -1030,31 +1018,32 @@
     "enriched_metadata": {
       "detailed_genres": [
         "Dark Comedy",
-        "Dramedy",
         "Tragicomedy",
+        "Character-driven Drama",
         "British Sitcom"
       ],
       "mood": [
-        "Darkly humorous",
+        "Dry-witted",
         "Melancholic",
-        "Raw",
         "Irreverent",
+        "Raw",
         "Bittersweet"
       ],
       "themes": [
         "grief",
         "guilt",
-        "family dysfunction",
         "loneliness",
-        "sexuality and intimacy",
+        "dysfunctional family",
         "sisterhood",
-        "self-destruction",
-        "coping with loss"
+        "fear of intimacy",
+        "sexuality",
+        "loss",
+        "self-destruction"
       ],
       "target_audience": [
-        "Adults 18-49",
         "Late-night adult",
-        "Fans of British comedy-drama"
+        "Young Adults",
+        "Fans of British dark comedy"
       ],
       "programming_slot_fit": [
         "Late night",
@@ -1062,22 +1051,22 @@
       ],
       "similar_content_suggestions": [
         "Catastrophe",
+        "Chewing Gum",
+        "Girls",
         "Killing Eve",
-        "This Way Up",
-        "I May Destroy You",
-        "Chewing Gum"
+        "This Way Up"
       ],
       "content_warnings": [
-        "Strong sexual content",
-        "Explicit language",
-        "Grief and bereavement themes",
-        "References to death",
-        "Mature/adult themes"
+        "Sexual content",
+        "Strong language",
+        "Grief/death themes",
+        "Discussion of suicide",
+        "Adult humor"
       ],
       "viewing_context": [
         "Evening watch",
         "Solo viewing",
-        "Binge-watching"
+        "Binge watching"
       ]
     }
   },
@@ -1090,16 +1079,17 @@
       "content_warnings": [
         "Graphic violence",
         "Body horror",
+        "Gore",
         "Disturbing imagery",
-        "Ritual sacrifice depiction",
+        "Nudity",
         "Strong language"
       ],
       "detailed_genres": [
-        "Occult Horror",
+        "Supernatural Horror",
         "Psychological Horror",
+        "Witch Coven Horror",
         "Arthouse Horror",
-        "Witchcraft Drama",
-        "Supernatural Mystery"
+        "Occult Mystery"
       ],
       "mood": [
         "Unsettling",
@@ -1111,34 +1101,32 @@
       ],
       "themes": [
         "witchcraft and coven power struggles",
-        "trauma and grief",
-        "female bodily autonomy",
-        "good versus evil",
-        "historical guilt and fascism",
+        "guilt and historical trauma",
+        "female power and control",
         "identity and transformation",
+        "good versus evil",
         "artistic obsession"
       ],
       "target_audience": [
         "Late-night adult",
-        "Arthouse horror enthusiasts",
-        "Mature audiences"
+        "Horror enthusiasts",
+        "Arthouse/cinephile audience"
       ],
       "programming_slot_fit": [
         "Late night"
       ],
       "similar_content_suggestions": [
         "Suspiria (1977)",
-        "Black Swan",
-        "The Witch",
         "Hereditary",
-        "Climax",
-        "Black Narcissus",
-        "Rosemary's Baby"
+        "The Witch",
+        "Black Swan",
+        "Midsommar",
+        "Climax"
       ],
       "viewing_context": [
         "Evening watch",
-        "Solo viewing",
-        "Late-night horror marathon"
+        "Late-night solo viewing",
+        "Horror movie night for mature viewers"
       ]
     }
   },
@@ -1150,9 +1138,9 @@
     "enriched_metadata": {
       "detailed_genres": [
         "Psychological Thriller",
-        "Mind-Bending Sci-Fi",
+        "Mind-bending Sci-Fi",
         "Parallel Universe Drama",
-        "Low-Budget Indie Sci-Fi"
+        "Low-budget Indie Sci-Fi"
       ],
       "mood": [
         "Tense",
@@ -1164,35 +1152,38 @@
       "themes": [
         "identity",
         "paranoia",
-        "reality and perception",
-        "friendship under strain",
-        "choice and consequence",
-        "the multiverse"
+        "alternate realities",
+        "trust and betrayal",
+        "quantum physics",
+        "fractured relationships"
       ],
       "target_audience": [
-        "Late-night adult",
+        "Adults 25-45",
         "Sci-Fi enthusiasts",
+        "Late-night adult",
         "Indie film fans"
       ],
       "programming_slot_fit": [
-        "Late night"
+        "Late night",
+        "Prime time"
       ],
       "similar_content_suggestions": [
         "Primer",
         "The One I Love",
         "Triangle",
-        "Timecrimes",
-        "Dark"
+        "Dark",
+        "Timecrimes"
       ],
       "content_warnings": [
+        "Psychological distress",
         "Drug use",
-        "Violence",
-        "Intense psychological themes"
+        "Mild violence",
+        "Strong language"
       ],
       "viewing_context": [
         "Evening watch",
         "Discussion-driven group viewing",
-        "Solo late-night viewing"
+        "Focused viewing (not background)"
       ]
     }
   }
