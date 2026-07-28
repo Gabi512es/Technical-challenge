@@ -4,3 +4,4 @@ sentence-transformers
 anthropic
 python-dotenv
 numpy
+httpx

@@ -254,13 +254,23 @@ def rerank_with_llm(query: str, candidates: list) -> list:
             raise ValueError("No tool_use block found in the response")
 
         results = tool_use_block.input.get("results")
-        if not results:
-            raise ValueError("submit_ranked_results returned an empty results array")
+        if not isinstance(results, list) or not (1 <= len(results) <= 5):
+            raise ValueError(f"submit_ranked_results returned an invalid results list: {results!r}")
 
         valid_content_ids = {candidate["content_id"] for candidate in candidates}
+        seen_content_ids = set()
         for result in results:
-            if result.get("content_id") not in valid_content_ids:
-                raise ValueError(f"LLM returned an unknown content_id: {result.get('content_id')}")
+            content_id = result.get("content_id")
+            relevance_reason = result.get("relevance_reason")
+
+            if not content_id or content_id not in valid_content_ids:
+                raise ValueError(f"LLM returned an unknown or empty content_id: {content_id!r}")
+            if content_id in seen_content_ids:
+                raise ValueError(f"LLM returned a duplicate content_id: {content_id!r}")
+            if not isinstance(relevance_reason, str) or not relevance_reason.strip():
+                raise ValueError(f"LLM returned an empty or invalid relevance_reason for content_id {content_id!r}")
+
+            seen_content_ids.add(content_id)
 
         return results
 

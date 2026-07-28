@@ -25,56 +25,6 @@ The brief was intentionally broad, so I picked a specific framing to ground my c
 A pipeline with three stages. **All three should run as automated code**, including data gathering. Please don't hand-collect the data. 
 We should be able to clone/unzip your project, follow your README, and run the whole thing end-to-end ourselves.
 
-## Project Structure and How to Run
-
-### Repository structure
-
-```
-.
-├── .env.example                  # Template for local secrets — copy to .env and fill in TMDB_API_KEY + ANTHROPIC_API_KEY
-├── content_sample.csv             # Seed list provided with the challenge (content_id, title, year)
-├── content_sample.json            # Same seed list, JSON format
-├── requirements.txt                # Dependencies for stages 1-2 (the fetch and enrichment notebooks)
-├── 01_fetch_raw_data.ipynb        # Stage 1: fetches raw TMDB metadata per title -> data/fetched_raw.json
-├── 02_enrich_metadata.ipynb       # Stage 2: calls Claude to produce enriched_metadata -> data/enriched_final.json
-├── diagnose_ambiguous_titles.py   # Standalone diagnostic used for the stage 1 movie/tv disambiguation fix, not part of the pipeline
-├── audit_stage3.py                # Standalone audit for stage 3: embedding ranks, reranking impact, fallback behavior
-├── api/
-│   ├── main.py                    # FastAPI app: POST /search, loads the catalog and precomputes embeddings at startup
-│   ├── search.py                  # Retrieval (embeddings) + reranking (Claude) logic used by main.py
-│   └── requirements.txt           # Dependencies for stage 3 only (fastapi, sentence-transformers, anthropic, ...) — separate from the root requirements.txt
-└── data/
-    ├── content_sample.csv         # Copy of the seed list read by 01_fetch_raw_data.ipynb
-    ├── fetched_raw.json           # Stage 1 output: raw TMDB metadata for all 21 items
-    └── enriched_final.json        # Stage 2 output: enriched_metadata for all 21 items, consumed by stage 3
-```
-
-### How to run, step by step
-
-1. **Configure secrets.** Copy `.env.example` to `.env` and fill in both `TMDB_API_KEY` (stage 1) and `ANTHROPIC_API_KEY` (stages 2-3).
-   ```bash
-   cp .env.example .env
-   ```
-2. **Install dependencies.** Stages 1-2 and stage 3 have separate `requirements.txt` files, since stage 3 pulls in heavier ML dependencies (`sentence-transformers`) that the notebooks don't need:
-   ```bash
-   python3 -m pip install -r requirements.txt        # stages 1-2 (notebooks)
-   python3 -m pip install -r api/requirements.txt    # stage 3 (search API)
-   ```
-3. **Run stage 1 end-to-end.** Open `01_fetch_raw_data.ipynb` and use *Restart Kernel* before *Run All* — not just re-running cells on an already-running kernel. A kernel that already ran once may have cached an empty or stale `.env` value in memory even after the file has been edited and saved, so restarting guarantees a fresh read of `.env` before producing `data/fetched_raw.json`.
-4. **Run stage 2 end-to-end.** Open `02_enrich_metadata.ipynb` and use *Restart Kernel* before *Run All*, for the same reason: this guarantees `ANTHROPIC_API_KEY` is freshly loaded from `.env` rather than a stale value cached from a previous kernel session, before producing `data/enriched_final.json`.
-5. **Start the search API.**
-   ```bash
-   uvicorn api.main:app --reload
-   ```
-6. **Call the search endpoint.**
-   ```bash
-   curl -X POST http://127.0.0.1:8000/search \
-     -H "Content-Type: application/json" \
-     -d '{"query": "movies about dreams or alternate realities"}'
-   ```
-
-Stages 1, 2, and 3 are deliberately kept as separate runnable units — two notebooks plus a standalone API — rather than a single one-click script. This is a deliberate choice, not an oversight: it lets each stage's output (`data/fetched_raw.json`, then `data/enriched_final.json`) be inspected independently before moving on, which matters when the pipeline calls two different paid APIs (TMDB, then Anthropic) and includes an LLM enrichment step whose output is worth checking before it feeds into search.
-
 ### 1. Get the data
 Start from the seed list in `content_sample.csv` (title, year). For each title, automatically fetch a **movie/show description** plus anything else useful you want. 
 
@@ -102,6 +52,69 @@ AI coding assistants are welcome!
 - The search must be exposed as a working API endpoint we can call
 - Code should be readable and structured
 - Provide clear instructions so we can run the whole pipeline end-to-end
+
+## Project Structure and How to Run
+
+### Repository structure
+
+```
+.
+├── .env.example                  # Template for local secrets — copy to .env and fill in TMDB_API_KEY + ANTHROPIC_API_KEY
+├── content_sample.csv             # Original seed list as provided with the challenge (kept at the root, untouched)
+├── content_sample.json            # Same original seed list, JSON format (also kept as provided)
+├── requirements.txt                # Dependencies for stages 1-2 (the fetch and enrichment notebooks)
+├── 01_fetch_raw_data.ipynb        # Stage 1: fetches raw TMDB metadata per title -> data/fetched_raw.json
+├── 02_enrich_metadata.ipynb       # Stage 2: calls Claude to produce enriched_metadata -> data/enriched_final.json
+├── diagnose_ambiguous_titles.py   # Standalone diagnostic used for the stage 1 movie/tv disambiguation fix, not part of the pipeline
+├── audit_stage3.py                # Standalone audit for stage 3: embedding ranks, reranking impact, fallback behavior
+├── api/
+│   ├── main.py                    # FastAPI app: POST /search, loads the catalog and precomputes embeddings at startup
+│   ├── search.py                  # Retrieval (embeddings) + reranking (Claude) logic used by main.py
+│   └── requirements.txt           # Dependencies for stage 3 only (fastapi, sentence-transformers, anthropic, ...) — separate from the root requirements.txt
+└── data/
+    ├── content_sample.csv         # Working copy actually read by 01_fetch_raw_data.ipynb (INPUT_CSV_PATH points here, not the root copy)
+    ├── fetched_raw.json           # Stage 1 output: raw TMDB metadata for all 21 items
+    └── enriched_final.json        # Stage 2 output: enriched_metadata for all 21 items, consumed by stage 3
+```
+
+`content_sample.csv` appears twice on purpose, not as an accidental duplicate: the root copy is the original file exactly as provided with the challenge, left untouched for reference; the `data/` copy is the one the pipeline actually reads from (`INPUT_CSV_PATH = "data/content_sample.csv"` in stage 1), so the notebook's working input is never mixed up with the delivered original.
+
+Both notebooks — `01_fetch_raw_data.ipynb` and `02_enrich_metadata.ipynb` — follow the same internal four-part structure, so reviewing one prepares you for the other. **I. Import** sets up libraries and constants; **II. Data Preparation** loads the stage's input and defines its helper functions; **III. Data Processing** holds the core logic (TMDB matching/fetching for stage 1, Claude enrichment calls for stage 2); and **IV. Master/Export** assembles the final records, prints a validation summary, and writes the output file. This is a consistent convention applied across both notebooks, not something that varies stage to stage.
+
+### How to run, step by step
+
+1. **Configure secrets.** Copy `.env.example` to `.env` and fill in both `TMDB_API_KEY` (stage 1) and `ANTHROPIC_API_KEY` (stages 2-3).
+   ```bash
+   cp .env.example .env
+   ```
+2. **Install dependencies.** Stages 1-2 and stage 3 have separate `requirements.txt` files, since stage 3 pulls in heavier ML dependencies (`sentence-transformers`) that the notebooks don't need:
+   ```bash
+   python3 -m pip install -r requirements.txt        # stages 1-2 (notebooks)
+   python3 -m pip install -r api/requirements.txt    # stage 3 (search API)
+   ```
+3. **Run stage 1 end-to-end.** Open `01_fetch_raw_data.ipynb` and use *Restart Kernel* before *Run All* — not just re-running cells on an already-running kernel. A kernel that already ran once may have cached an empty or stale `.env` value in memory even after the file has been edited and saved, so restarting guarantees a fresh read of `.env` before producing `data/fetched_raw.json`.
+4. **Run stage 2 end-to-end.** Open `02_enrich_metadata.ipynb` and use *Restart Kernel* before *Run All*, for the same reason: this guarantees `ANTHROPIC_API_KEY` is freshly loaded from `.env` rather than a stale value cached from a previous kernel session, before producing `data/enriched_final.json`.
+5. **Start the search API.**
+   ```bash
+   uvicorn api.main:app --reload
+   ```
+   If `uvicorn` is not found on PATH, use this instead:
+   ```bash
+   python3 -m uvicorn api.main:app --reload
+   ```
+   The first startup downloads the `all-MiniLM-L6-v2` model (a few dozen MB, cached afterwards) and precomputes embeddings for all 21 items before the server starts accepting requests.
+6. **Call the search endpoint.**
+   ```bash
+   curl -X POST http://127.0.0.1:8000/search \
+     -H "Content-Type: application/json" \
+     -d '{"query": "movies about dreams or alternate realities"}'
+   ```
+   Or with [HTTPie](https://httpie.io/):
+   ```bash
+   http POST http://127.0.0.1:8000/search query="movies about dreams or alternate realities"
+   ```
+
+Stages 1, 2, and 3 are deliberately kept as separate runnable units — two notebooks plus a standalone API — rather than a single one-click script. This is a deliberate choice, not an oversight: it lets each stage's output (`data/fetched_raw.json`, then `data/enriched_final.json`) be inspected independently before moving on, which matters when the pipeline calls two different paid APIs (TMDB, then Anthropic) and includes an LLM enrichment step whose output is worth checking before it feeds into search.
 
 ## Input
 
@@ -168,6 +181,16 @@ We'll evaluate based on:
 - **Scope smartly** — if you're running long, stop and note what you'd do next in the README
 - **Be ready to discuss** — we'll ask you to walk through your solution and explain your decisions in the follow-up interview
 
+## Limitations and Next Steps
+
+This prototype is intentionally scoped for a 21-item catalog, not production. With more time, I'd prioritize:
+
+- Evaluate retrieval quality on a larger, labeled query set, rather than the handful of example queries verified so far.
+- Persist precomputed embeddings and use a proper ANN/vector index for a production-scale catalog, instead of recomputing everything in memory at startup.
+- Recompute embeddings during catalog ingestion when items change, rather than only at API startup.
+- Add automated unit and integration tests for malformed LLM responses and fallback paths — the reranking validation fix in this round is exactly the kind of case a test suite should cover going forward.
+- Monitor search latency, LLM cost, fallback rate, and result quality in a real deployment.
+
 ## Questions?
 
 If you have any questions about the test, please reach out to us.
@@ -177,6 +200,8 @@ Good luck! We're excited to see your approach.
 ---
 
 ## Stage 3 — Running the Search API
+
+See "Project Structure and How to Run" above for setup and run commands.
 
 Stage 3 is a standalone FastAPI application (not a notebook) exposing a single `POST /search`
 endpoint. It implements a hybrid retrieve-then-rerank pipeline over the 21-item catalog produced
@@ -197,46 +222,6 @@ by stages 1 and 2 (`data/enriched_final.json`):
    can miss. The reranker is explicitly instructed to be selective rather than exhaustive: it
    returns only genuinely relevant titles, and will return just one result (as observed for the
    Chernobyl/disaster-documentary query below) rather than padding the list with weak matches.
-
-### Install dependencies
-
-```bash
-python3 -m pip install -r api/requirements.txt
-```
-
-### Start the server
-
-Make sure `.env` has `ANTHROPIC_API_KEY` set (same `.env` used by stages 1-2), then run from the
-project root:
-
-```bash
-uvicorn api.main:app --reload
-```
-
-If `uvicorn` is not found on PATH, use this instead:
-
-```bash
-python3 -m uvicorn api.main:app --reload
-```
-
-The first startup downloads the `all-MiniLM-L6-v2` model (a few dozen MB, cached afterwards) and
-precomputes embeddings for all 21 items before the server starts accepting requests.
-
-### Call the search endpoint
-
-With curl:
-
-```bash
-curl -X POST http://127.0.0.1:8000/search \
-  -H "Content-Type: application/json" \
-  -d '{"query": "movies about dreams or alternate realities"}'
-```
-
-With [HTTPie](https://httpie.io/):
-
-```bash
-http POST http://127.0.0.1:8000/search query="movies about dreams or alternate realities"
-```
 
 ### Example queries and verified results
 
